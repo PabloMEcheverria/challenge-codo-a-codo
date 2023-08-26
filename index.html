@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Hojas de estilos generales a toda la page------>
     <link rel="stylesheet" href="./css/meyerReset.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <!------------------------------------------------->
+
+    <!--Hojas de estilos de los distintos componentes de la page-->
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <!------------------------------------------------------------>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,14 +27,14 @@
             </picture>
             <ul class="header__menu flex-container justify-space-between">
                 <li class="header__menu-item">
-                    <a class="header__menu-link" href="./pages/shop.html">SHOP</a>
+                    <a class="header__menu-link nav-text-style" href="./pages/shop.html">SHOP</a>
                     <i class="fa-solid fa-chevron-down header__menu-chevron"></i>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-link" href="./pages/contact.html">CONTACTO</a>
+                    <a class="header__menu-link nav-text-style" href="./pages/contact.html">CONTACTO</a>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-link" href="./pages/login.html">LOGIN</a>
+                    <a class="header__menu-link nav-text-style" href="./pages/login.html">LOGIN</a>
                 </li>
                 <li class="header__menu-icon">
                     <a class="header__menu-link" href="./pages/cart.html">
@@ -38,12 +45,12 @@
         </nav>
     </header>
     <section class="banner">
-        <article>
-            <h3>Nuevos Ingresos</h3>
-            <p>Descubrí el próximo Funko Pop de tu colección</p>
-            <a href="./pages/shop.html">VER COLECCIÓN</a>
+        <article class="banner__content">
+            <h3 class="banner__title">Nuevos Ingresos</h3>
+            <p class="banner__description">Descubrí el próximo Funko Pop de tu colección</p>
+            <a class="banner__link" href="./pages/shop.html">SHOP</a>
         </article>
-    </section>
+    </section>    
     <main class="main">
         <section>
             <article>
@@ -121,28 +128,25 @@
         </ul>
     </section>
     <footer class="footer">
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./pages/shop.html">SHOP</a>
+        <section class="footer__section">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link nav-text-style" href="./pages/shop.html">SHOP</a>
                     </li>
-                    <li>
-                        <a href="./pages/register.html">REGISTRARSE</a>
+                    <li class="footer__item">
+                        <a class="footer__link nav-text-style" href="./pages/login.html">INGRESAR</a>
                     </li>
-                    <li>
-                        <a href="./pages/login.html">LOGIN</a>
-                    </li>
-                    <li>
-                        <a href="./pages/contact.html">CONTACTO</a>
+                    <li class="footer__item">
+                        <a class="footer__link nav-text-style" href="./pages/contact.html">CONTACTO</a>
                     </li>
                 </ul>
             </nav>
-            <picture>
-                <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-            </picture>
+            <picture class="footer__logo">
+                <img class="footer__image" src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            </picture>  
         </section>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        <p class="footer__copyright nav-text-styles">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
 </body>
 </html>

@@ -1,4 +1,54 @@
 .footer {
     background-color: rgba(48, 52, 63, 1);
+    box-sizing: border-box;
+    height: 343px;
+    position: relative;
     width: 100%;
+}
+
+.footer__section {
+    height: 116.19px;
+    left: 110px;
+    position: absolute;
+    top: 124px;
+    width: 1220px;
+}
+
+.footer__nav {
+    bottom: 0;
+    display: inline-block;
+    height: 87px;
+    left: 0;
+    position: absolute;
+    width: 109px;
+}
+
+.footer__list {
+    list-style-type: none;
+}
+
+.footer__item {
+    margin-bottom: 7.5px;
+}
+
+.footer__logo {
+    display: inline-block;
+    height: 117px;
+    position: absolute;
+    right: 0;
+    width: 143px;
+}
+
+.footer__image {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.footer__copyright {
+    bottom: 23px;
+    display: inline-block;
+    left: 524px;
+    margin: auto;
+    position: absolute;
 }

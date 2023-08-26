@@ -1,0 +1,49 @@
+.banner {
+    /*backdrop-filter: brightness(0.7) blur(5px);*/
+    background-image: url("../img/banner/funkos-banner-1.png");
+    background-position: 50% 78%;
+    background-size: cover;
+    height: 388px;
+    position: relative;
+    width: 100%;
+}
+
+.banner__content {
+    height: 168px;
+    left: 105px;
+    position: absolute;
+    top: 110px;
+    width: 397px;
+}
+
+.banner__title {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Raleway', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 44.61px;
+}
+
+.banner__description {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.13px;
+    position: relative;
+    top: 7px;
+}
+
+.banner__link {
+    color: rgba(17, 17, 17, 1);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    padding: 11px 78px 12px 77px;
+    position: relative;
+    text-decoration: none;
+    top: 55px;
+}
