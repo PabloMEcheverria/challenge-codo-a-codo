@@ -9,6 +9,7 @@
     <!--Hojas de estilos de los distintos componentes de la page-->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!------------------------------------------------------------>
     
@@ -51,35 +52,41 @@
             <a class="banner__link" href="./pages/shop.html">SHOP</a>
         </article>
     </section>    
-    <main class="main">
-        <section>
-            <article>
-                <h3>Star Wars & The Mandalorian</h3>
-                <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
-                <a href="./pages/shop.html">VER COLECCIÓN</a>
+    <main class="products flex-container flex-direction-column">
+        <section class="product">
+            <article class="product__info">
+                <h3 class="product__title">Star Wars & <br>The Mandalorian</h3>
+                <p class="product__description">Disfruta de una saga que sigue <br>agregando personajes a su colección.</p>
+                <div class="product__line">
+                    <a class="product__link" href="./pages/shop.html">VER COLECCIÓN</a>
+                </div>
             </article>
-            <picture>
-                <img src="./img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funko de Grogu de la serie 'The Mandalorian'">
+            <picture class="product__image">
+                <img class="product__img" src="./img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funko de Grogu de la serie 'The Mandalorian'">
             </picture>
         </section>
-        <section>
-            <article>
-                <h3>POKEMON INDIGO</h3>
-                <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                <a href="./pages/shop.html">VER COLECCIÓN</a>
+        <section class="product">
+            <article class="product__info">
+                <h3 class="product__title">POKEMON INDIGO</h3>
+                <p class="product__description">Atrapa todos los que puedas y disfruta <br>de una colección llena de amigos.</p>
+                <div class="product__line">
+                    <a href="./pages/shop.html" class="product__link">VER COLECCIÓN</a>
+                </div>
             </article>
-            <picture>
-                <img src="./img/pokemon/vulpix-1.webp" alt="Figura coleccionable Funko de Vulpix de la serie 'Pokemon'">
+            <picture class="product__image">
+                <img src="./img/pokemon/vulpix-1.webp" alt="Figura coleccionable Funko de Vulpix de la serie 'Pokemon'" class="product__img">
             </picture>
         </section>
-        <section>
-            <article>
-                <h3>hARRY POTTER</h3>
-                <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-                <a href="./pages/shop.html"></a>
+        <section class="product">
+            <article class="product__info">
+                <h3 class="product__title">HARRY POTTER</h3>
+                <p class="product__description">Revive los recuerdos de una saga llena <br>de magia y encanto.</p>
+                <div class="product__line">
+                    <a href="./pages/shop.html" class="product__link">VER COLECCIÓN</a>
+                </div>
             </article>
-            <picture>
-                <img src="./img/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable Funko del Patronus de Snape de la película 'Harry Potter'">
+            <picture class="product__image">
+                <img src="./img/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable Funko del Patronus de Snape de la película 'Harry Potter'" class="product__img">
             </picture>
         </section>
     </main>

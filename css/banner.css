@@ -18,17 +18,21 @@
 
 .banner__title {
     color: rgba(255, 255, 255, 1);
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 38px;
     font-weight: 700;
+    height: 45px;
     line-height: 44.61px;
 }
 
 .banner__description {
     color: rgba(255, 255, 255, 1);
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
+    height: 21px;
     line-height: 21.13px;
     position: relative;
     top: 7px;
@@ -38,12 +42,16 @@
     color: rgba(17, 17, 17, 1);
     background: rgba(255, 255, 255, 1);
     border-radius: 50px;
+    bottom: 0;
+    box-sizing: border-box;
+    display: inline-block;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 500;
+    left: 5px;
     line-height: 24.2px;
     padding: 11px 78px 12px 77px;
-    position: relative;
+    position: absolute;
     text-decoration: none;
-    top: 55px;
+    width: 211px;
 }
