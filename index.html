@@ -4,17 +4,21 @@
     <!--Hojas de estilos generales a toda la page------>
     <link rel="stylesheet" href="./css/meyerReset.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <!------------------------------------------------->
 
     <!--Hojas de estilos de los distintos componentes de la page-->
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/banner.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/news.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    
+    <link rel="stylesheet" href="./css/index_banner.css">
+    <link rel="stylesheet" href="./css/index_main.css">
+    <link rel="stylesheet" href="./css/index_news.css">
     <!------------------------------------------------------------>
     
+    <!--Link para el CDN de Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!------------------------------------>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Funkoshop</title>
@@ -50,7 +54,7 @@
         <article class="banner__content">
             <h3 class="banner__title">Nuevos Ingresos</h3>
             <p class="banner__description">Descubrí el próximo Funko Pop de tu colección</p>
-            <a class="banner__link" href="./pages/shop.html">SHOP</a>
+            <a class="banner__link inter-500" href="./pages/shop.html">SHOP</a>
         </article>
     </section>    
     <main class="products flex-container flex-direction-column">
@@ -59,7 +63,7 @@
                 <h3 class="product__title h2-title">Star Wars & <br>The Mandalorian</h3>
                 <p class="product__description">Disfruta de una saga que sigue <br>agregando personajes a su colección.</p>
                 <div class="product__line">
-                    <a class="product__link" href="./pages/shop.html">VER COLECCIÓN</a>
+                    <a class="product__link inter-500" href="./pages/shop.html">VER COLECCIÓN</a>
                 </div>
             </article>
             <picture class="product__image">
@@ -71,7 +75,7 @@
                 <h3 class="product__title h2-title">POKEMON INDIGO</h3>
                 <p class="product__description">Atrapa todos los que puedas y disfruta <br>de una colección llena de amigos.</p>
                 <div class="product__line">
-                    <a href="./pages/shop.html" class="product__link">VER COLECCIÓN</a>
+                    <a class="product__link inter-500" href="./pages/shop.html">VER COLECCIÓN</a>
                 </div>
             </article>
             <picture class="product__image">
@@ -83,7 +87,7 @@
                 <h3 class="product__title h2-title">HARRY POTTER</h3>
                 <p class="product__description">Revive los recuerdos de una saga llena <br>de magia y encanto.</p>
                 <div class="product__line">
-                    <a href="./pages/shop.html" class="product__link">VER COLECCIÓN</a>
+                    <a class="product__link inter-500" href="./pages/shop.html">VER COLECCIÓN</a>
                 </div>
             </article>
             <picture class="product__image">
@@ -95,45 +99,45 @@
         <h2 class="news__title h2-title">Últimos lanzamientos</h2>
         <div class="news__carousel">
             <ul class="news__list flex-container flex-direction-row justify-space-between">
-                <li class="news__item">
-                    <article class="news__article">
-                        <picture class="news__image">
-                            <img class="news__img" src="./img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper de la película 'Star Wars'">
+                <li class="news__item card">
+                    <article class="news__article card__product">
+                        <picture class="news__image card__image">
+                            <img class="news__img card__img" src="./img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper de la película 'Star Wars'">
                         </picture>
-                        <p class="news__status">NUEVO</p>
-                        <div class="news__content">
-                            <p class="news__category">STAR WARS</p>
-                            <h4 class="news__product-name">STORMTROOPER LIGHTSABER</h4>
-                            <p class="news__price">$ 1799,99</p>
-                            <p class="news__installments">3 CUOTAS SIN INTERÉS</p>
+                        <p class="news__status card__status inter-500">NUEVO</p>
+                        <div class="news__content card__content">
+                            <p class="news__category card__category inter-500">STAR WARS</p>
+                            <h4 class="news__product-name card__product-name inter-700">STORMTROOPER LIGHTSABER</h4>
+                            <p class="news__price card__price inter-400">$ 1799,99</p>
+                            <p class="news__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
                         </div>
                     </article>
                 </li>
-                <li class="news__item">
-                    <article class="news__article">
-                        <picture class="news__image">
-                            <img class="news__img" src="./img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto de la serie 'Pokemon'">
+                <li class="news__item card">
+                    <article class="news__article card__product">
+                        <picture class="news__image card__image">
+                            <img class="news__img card__img" src="./img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto de la serie 'Pokemon'">
                         </picture>
-                        <p class="news__status">NUEVO</p>
-                        <div class="news__content">
-                            <p class="news__category">POKEMON</p>
-                            <h4 class="news__product-name">PIDGEOTTO</h4>
-                            <p class="news__price">$ 1799,99</p>
-                            <p class="news__installments">3 CUOTAS SIN INTERÉS</p>
+                        <p class="news__status card__status inter-500">NUEVO</p>
+                        <div class="news__content card__content">
+                            <p class="news__category card__category inter-500">POKEMON</p>
+                            <h4 class="news__product-name card__product-name inter-700">PIDGEOTTO</h4>
+                            <p class="news__price card__price inter-400">$ 1799,99</p>
+                            <p class="news__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
                         </div>
                     </article>
                 </li>
-                <li class="news__item">
-                    <article class="news__article">
-                        <picture class="news__image">
-                            <img class="news__img" src="./img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood con mascara de leon de la película 'Harry Potter'">
+                <li class="news__item card">
+                    <article class="news__article card__product">
+                        <picture class="news__image card__image">
+                            <img class="news__img card__img" src="./img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood con mascara de leon de la película 'Harry Potter'">
                         </picture>
-                        <p class="news__status">NUEVO</p>
-                        <div class="news__content">
-                            <p class="news__category">HARRY POTTER</p>
-                            <h4 class="news__product-name">LUNA LOVEGOOD LION MASK</h4>
-                            <p class="news__price">$ 1799,99</p>
-                            <p class="news__installments">3 CUOTAS SIN INTERÉS</p>
+                        <p class="news__status card__status inter-500">NUEVO</p>
+                        <div class="news__content card__content">
+                            <p class="news__category card__category inter-500">HARRY POTTER</p>
+                            <h4 class="news__product-name card__product-name inter-700">LUNA LOVEGOOD LION MASK</h4>
+                            <p class="news__price card__price inter-400">$ 1799,99</p>
+                            <p class="news__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
                         </div>
                     </article>
                 </li>

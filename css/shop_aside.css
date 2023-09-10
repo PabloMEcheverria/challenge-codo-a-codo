@@ -1,0 +1,174 @@
+.product-filter__form {
+    border-radius: 6px;
+    height: 493.93px;
+    left: 110px;
+    position: relative;
+    top: 68px;
+    width: 243.04px;
+}
+
+.product-filter__subtitle {
+    color: rgba(17, 17, 17, 1);
+    font-size: 24px;
+    height: 29px;
+    line-height: 29.05px;
+    top: 212px;
+    width: 99px;
+}
+
+#search {
+    margin: 10px 0 28px;
+}
+
+#sort {
+    margin: 16px 0 28px;
+}
+
+#label-3 {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.product-filter__container--number {
+    margin-bottom: 23.9px;
+    width: 100%;
+}
+
+.product-filter__label--number {
+    color: rgba(17, 17, 17, 1);
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19.36px;
+    margin-top: 4.07px;
+}
+
+.product-filter__div-input--number {
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(48, 52, 63, 1);
+    border-radius: 6px;
+    box-sizing: content-box;
+    height: 27.52px;
+    width: 59.14px;
+}
+
+.product-filter__input--number {
+    border: 2px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: rgba(17, 17, 17, 1);
+    display: inline-block;
+    height: 27.52px;
+    padding: 0;
+    text-align: center;
+    width: 59.14px;
+}
+
+#label-4 {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.product-filter__container--checkbox {
+    height: 123.94px;
+    margin-left: 16px;
+    width: 194.12px;
+}
+
+.product-filter__checkbox--wrapper {
+    height: 24.07px;
+    position: relative;
+}
+
+.product-filter__checkbox {
+    opacity: 0;
+    z-index: 1;
+}
+
+.product-filter__fake-checkbox {
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(48, 52, 63, 1);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.product-filter__checkbox:hover + .product-filter__fake-checkbox {
+    border: 2px solid rgba(108, 112, 123, 1);
+}
+
+.product-filter__checkbox:checked + .product-filter__fake-checkbox {
+    border: none;
+}
+
+.product-filter__checkbox-icon {
+    border-radius: 6px;
+    color: rgb(0, 117, 255);
+    display: inline-block;
+    font-size: 27.5px;
+    height: 100%;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    top: -1.5px;
+    width: 100%;
+}
+
+.product-filter__checkbox:checked + .product-filter__fake-checkbox .product-filter__checkbox-icon{
+    opacity: 1;
+}
+
+.product-filter__label--checkbox {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 18px;
+    left: 29.12px;
+    line-height: 21.78px;
+    position: absolute;
+    top: 0;
+}
+
+/*Estilos para múltiples clases*/
+
+.product-filter__input, 
+.product-filter__input::placeholder, 
+.product-filter__select, 
+.product-filter__option, 
+.product-filter__input--number, 
+.product-filter__input--number::placeholder {
+    font-size: 20px;
+    line-height: 24.2px;
+    text-transform: none;
+}
+
+.product-filter__input, 
+.product-filter__option {
+    color: rgba(17, 17, 17, 1);
+    padding-left: 10px;
+}
+
+.product-filter__select, 
+.product-filter__input--number::placeholder {
+    color: rgba(17, 17, 17, 1);
+}
+
+.product-filter__input, 
+.product-filter__select {
+    border: 2px solid rgba(48, 52, 63, 1);
+    border-radius: 6px;
+    box-sizing: border-box;
+    height: 44.28px;
+    padding: 0 0 0 10.95px;
+    width: 243.03px;
+}
+
+.product-filter__checkbox, 
+.product-filter__fake-checkbox {
+    display: inline-block;
+    height: 24px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 24px;
+}
+
+/*-----------------------------*/

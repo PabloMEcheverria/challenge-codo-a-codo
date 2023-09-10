@@ -7,9 +7,10 @@
 }
 
 .footer__section {
+    display: block;
     height: 116.19px;
-    left: 110px;
-    position: absolute;
+    margin: 0 auto;
+    position: relative;
     top: 124px;
     width: 1220px;
 }

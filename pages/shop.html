@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Hojas de estilos generales a toda la page------>
+    <link rel="stylesheet" href="../css/meyerReset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!------------------------------------------------->
+
+    <!--Hojas de estilos de los distintos componentes de la page-->
+    <link rel="stylesheet" href="../css/shop_main.css">
+    <link rel="stylesheet" href="../css/shop_aside.css">
+    <link rel="stylesheet" href="../css/shop_main.css">
+    <!------------------------------------------------------------>
+
+    <!--Link para el CDN de Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!------------------------------------>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Funkoshop</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <picture class="header__picture">
+                <a class="header__link" href="../index.html">
+                    <img class="header__img" src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+                </a>
+            </picture>
+            <ul class="header__menu flex-container justify-space-between">
+                <li class="header__menu-item">
+                    <a class="header__menu-link nav-text-styles" href="../pages/shop.html">SHOP</a>
+                    <i class="fa-solid fa-chevron-down header__menu-chevron"></i>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link nav-text-styles" href="../pages/contact.html">CONTACTO</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-link nav-text-styles" href="../pages/login.html">LOGIN</a>
+                </li>
+                <li class="header__menu-icon">
+                    <a class="header__menu-link" href="../pages/cart.html">
+                        <img src="../img/icons/cart-icon.svg" alt="Ícono de carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="product-filter">
+        <form class="product-filter__form">
+            <label class="product-filter__subtitle inter-500" for="search" id="label-1">Buscar</label>
+            <input class="product-filter__input inter-500" type="text" id="search" name="search" placeholder="ítem o categoría">
+            <label class="product-filter__subtitle inter-500" for="sort" id="label-2">Ordenar por</label>
+            <select class="product-filter__select" name="sort" id="sort">
+                <option class="product-filter__option inter-500" value="descendingOrder" selected>Mayor a menor</option>
+                <option class="product-filter__option inter-500" value="ascendingOrder">Menor a mayor</option>
+                <option class="product-filter__option inter-500" value="alphabeticalOrder">Orden alfabético</option>
+            </select>
+            <section class="product-filter__range">
+                <h4 class="product-filter__subtitle inter-500" id="label-3">Precio</h4>
+                <div class="product-filter__container--number flex-container flex-direction-row justify-space-between">
+                    <label class="product-filter__label--number inter-500" for="min">Min</label>
+                    <div class="product-filter__div-input--number">
+                        <input class="product-filter__input--number inter-500" type="number" id="min">
+                    </div>
+                    <p class="product-filter__label--number inter-500"> - </p>
+                    <label class="product-filter__label--number inter-500" for="max">Max</label>
+                    <div class="product-filter__div-input--number">
+                        <input class="product-filter__input--number inter-500" type="number" id="max">
+                    </div>
+                </div>
+            </section>
+            <section class="product-filter__checkboxes">
+                <h4 class="product-filter__subtitle inter-500" id="label-4">Filtrar</h4>
+                <div class="product-filter__container--checkbox flex-container flex-direction-column justify-space-between">
+                    <div class="product-filter__checkbox--wrapper">
+                        <input class="product-filter__checkbox" type="checkbox" id="new" name="new" value="new">
+                        <span class="product-filter__fake-checkbox">
+                            <i class="product-filter__checkbox-icon fa-solid fa-square-check"></i>
+                        </span>
+                        <label class="product-filter__label--checkbox inter-500" for="new">
+                            Nuevos
+                        </label>
+                    </div>
+                    <div class="product-filter__checkbox--wrapper">
+                        <input class="product-filter__checkbox" type="checkbox" id="offers" name="offers" value="offers">
+                        <span class="product-filter__fake-checkbox">
+                            <i class="product-filter__checkbox-icon fa-solid fa-square-check"></i>
+                        </span>
+                        <label class="product-filter__label--checkbox inter-500" for="offers">
+                            Ofertas
+                        </label>
+                    </div>
+                    <div class="product-filter__checkbox--wrapper">
+                        <input class="product-filter__checkbox" type="checkbox" id="specialEdition" name="specialEdition" value="specialEdition">
+                        <span class="product-filter__fake-checkbox">
+                            <i class="product-filter__checkbox-icon fa-solid fa-square-check"></i>
+                        </span>
+                        <label class="product-filter__label--checkbox inter-500" for="specialEdition">
+                            Edición especial
+                        </label>
+                    </div>
+                    <div class="product-filter__checkbox--wrapper">
+                        <input class="product-filter__checkbox" type="checkbox" id="favorites" name="favorites" value="favorites">
+                        <span class="product-filter__fake-checkbox">
+                            <i class="product-filter__checkbox-icon fa-solid fa-square-check"></i>
+                        </span>
+                        <label class="product-filter__label--checkbox inter-500" for="favorites">
+                            Favoritos
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </aside>
+    <main class="product-list">
+        <ul class="product-list__items">
+            <li class="product-list__item">
+                <article class="product-card card__product">
+                    <picture class="product-card__image card__image">
+                        <img class="product-card__img card__img" src="../img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper de la película 'Star Wars'">
+                    </picture>
+                    <p class="product-card__status card__status inter-500">NUEVO</p>
+                    <div class="product-card__info card__content">
+                        <p class="product-card__category card__category inter-500">STAR WARS</p>
+                        <h4 class="product-card__title card__product-name inter-700">STORMTROOPER LIGHTSABER</h4>
+                        <p class="product-card__price card__price inter-400">$ 1799,99</p>
+                        <p class="product-card__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+            </li>
+            <li class="product-list__item">
+                <article class="product-card card__product">
+                    <picture class="product-card__image card__image">
+                        <img class="product-card__img card__img" src="../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto de la serie 'Pokemon'">
+                    </picture>
+                    <p class="product-card__status card__status inter-500">NUEVO</p>
+                    <div class="product-card__info card__content">
+                        <p class="product-card__category card__category inter-500">POKEMON</p>
+                        <h4 class="product-card__title card__product-name inter-700">PIDGEOTTO</h4>
+                        <p class="product-card__price card__price inter-400">$ 1799,99</p>
+                        <p class="product-card__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+            </li>
+            <li class="product-list__item">
+                <article class="product-card card__product">
+                    <picture class="product-card__image card__image">
+                        <img class="product-card__img card__img" src="../img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood con mascara de leon de la película 'Harry Potter'">
+                    </picture>
+                    <p class="product-card__status card__status inter-500">NUEVO</p>
+                    <div class="product-card__info card__content">
+                        <p class="product-card__category card__category inter-500">HARRY POTTER</p>
+                        <h4 class="product-card__title card__product-name inter-700">LUNA LOVEGOOD LION MASK</h4>
+                        <p class="product-card__price card__price inter-400">$ 1799,99</p>
+                        <p class="product-card__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+            </li>
+            <li class="product-list__item">
+                <article class="product-card card__product">
+                    <picture class="product-card__image card__image">
+                        <img class="product-card__img card__img" src="../img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper de la película 'Star Wars'">
+                    </picture>
+                    <p class="product-card__status card__status inter-500">NUEVO</p>
+                    <div class="product-card__info card__content">
+                        <p class="product-card__category card__category inter-500">STAR WARS</p>
+                        <h4 class="product-card__title card__product-name inter-700">STORMTROOPER LIGHTSABER</h4>
+                        <p class="product-card__price card__price inter-400">$ 1799,99</p>
+                        <p class="product-card__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+            </li>
+            <li class="product-list__item">
+                <article class="product-card card__product">
+                    <picture class="product-card__image card__image">
+                        <img class="product-card__img card__img" src="../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto de la serie 'Pokemon'">
+                    </picture>
+                    <p class="product-card__status card__status inter-500">NUEVO</p>
+                    <div class="product-card__info card__content">
+                        <p class="product-card__category card__category inter-500">POKEMON</p>
+                        <h4 class="product-card__title card__product-name inter-700">PIDGEOTTO</h4>
+                        <p class="product-card__price card__price inter-400">$ 1799,99</p>
+                        <p class="product-card__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+            </li>
+            <li class="product-list__item">
+                <article class="product-card card__product">
+                    <picture class="product-card__image card__image">
+                        <img class="product-card__img card__img" src="../img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood con mascara de leon de la película 'Harry Potter'">
+                    </picture>
+                    <p class="product-card__status card__status inter-500">NUEVO</p>
+                    <div class="product-card__info card__content">
+                        <p class="product-card__category card__category inter-500">HARRY POTTER</p>
+                        <h4 class="product-card__title card__product-name inter-700">LUNA LOVEGOOD LION MASK</h4>
+                        <p class="product-card__price card__price inter-400">$ 1799,99</p>
+                        <p class="product-card__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+            </li>
+            <li class="product-list__item">
+                <article class="product-card card__product">
+                    <picture class="product-card__image card__image">
+                        <img class="product-card__img card__img" src="../img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper de la película 'Star Wars'">
+                    </picture>
+                    <p class="product-card__status card__status inter-500">NUEVO</p>
+                    <div class="product-card__info card__content">
+                        <p class="product-card__category card__category inter-500">STAR WARS</p>
+                        <h4 class="product-card__title card__product-name inter-700">STORMTROOPER LIGHTSABER</h4>
+                        <p class="product-card__price card__price inter-400">$ 1799,99</p>
+                        <p class="product-card__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+            </li>
+            <li class="product-list__item">
+                <article class="product-card card__product">
+                    <picture class="product-card__image card__image">
+                        <img class="product-card__img card__img" src="../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto de la serie 'Pokemon'">
+                    </picture>
+                    <p class="product-card__status card__status inter-500">NUEVO</p>
+                    <div class="product-card__info card__content">
+                        <p class="product-card__category card__category inter-500">POKEMON</p>
+                        <h4 class="product-card__title card__product-name inter-700">PIDGEOTTO</h4>
+                        <p class="product-card__price card__price inter-400">$ 1799,99</p>
+                        <p class="product-card__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+            </li>
+            <li class="product-list__item">
+                <article class="product-card card__product">
+                    <picture class="product-card__image card__image">
+                        <img class="product-card__img card__img" src="../img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood con mascara de leon de la película 'Harry Potter'">
+                    </picture>
+                    <p class="product-card__status card__status inter-500">NUEVO</p>
+                    <div class="product-card__info card__content">
+                        <p class="product-card__category card__category inter-500">HARRY POTTER</p>
+                        <h4 class="product-card__title card__product-name inter-700">LUNA LOVEGOOD LION MASK</h4>
+                        <p class="product-card__price card__price inter-400">$ 1799,99</p>
+                        <p class="product-card__installments card__installments inter-700">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                </article>
+            </li>             
+        </ul>
+        <div class="pagination"></div>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link nav-text-styles" href="../pages/shop.html">SHOP</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link nav-text-styles" href="../pages/login.html">INGRESAR</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link nav-text-styles" href="../pages/contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+            <picture class="footer__logo">
+                <img class="footer__image" src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            </picture>  
+        </section>
+        <p class="footer__copyright nav-text-styles">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+</body>
+</html>

@@ -55,15 +55,10 @@
     bottom: 0;
     color: rgba(255, 255, 255, 1);
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
     font-size: 24px;
-    font-weight: 500;
     line-height: 29px;
-    letter-spacing: 0em;
     padding: 18px 48px;
     position: absolute;
-    text-align: left;
-    text-decoration: none;
 }
 
 .product__image {

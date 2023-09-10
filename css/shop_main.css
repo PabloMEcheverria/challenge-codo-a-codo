@@ -1,0 +1,86 @@
+/*Posicionamiento de la estructura general de la página*/
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 368px 1fr;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+aside {
+    box-sizing: border-box;
+    grid-area: aside;
+}
+
+main {
+    box-sizing: border-box;
+    /* background-color: burlywood; */
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    
+}
+
+/*-----------------------------------------------------*/
+/*Grilla de cartas de productos*/
+
+.product-list__items {
+    /* background-color: cadetblue; */
+    align-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    height: 1608px;
+    justify-content: space-between;
+    left: 0;
+    position: relative;
+    top: 68px;
+    width: 960.03px;
+}
+
+.product-list__item {
+    /* background-color:indianred; */
+    display: inline-block;
+    height: 512px;
+    width: 304.01px;
+}
+
+.product-card__image {
+    height: 352px;
+}
+
+.product-card__status {
+    padding-left: 15.89px;
+    padding-right: 15.89px;
+    width: 81.18px;
+}
+
+.product-card__category, 
+.product-card__title, 
+.product-card__price, 
+.product-card__installments {
+    left: 12.09px;
+}
+
+/*-----------------------------*/
+
+.pagination {
+    background-color: darkgoldenrod;
+    height: 44px;
+    margin-top: 100px;
+    position: relative;
+    width: 356px;
+}
