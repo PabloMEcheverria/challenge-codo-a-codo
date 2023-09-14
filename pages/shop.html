@@ -246,13 +246,25 @@
             </li>             
         </ul>
         <ul class="pagination flex-container flex-direction-row flex-wrap-nowrap justify-space-between">
-            <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#">6</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#">7</a></li>
+            <li class="pagination__item pagination__control-prev pagination__control--disabled">
+                <a class="pagination__link--control" href="#">
+                    <svg class="pagination__svg--prev" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="pagination__svg-path" d="M11.0481 2.68875L4.75063 9L11.0481 15.3113L9.10938 17.25L0.859377 9L9.10938 0.75L11.0481 2.68875Z" fill="#E1E6EA"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="pagination__item flex-center pagination__item--selected"><a class="pagination__link pagination__link--selected inter-700" href="#">1</a></li>
+            <li class="pagination__item flex-center"><a class="pagination__link inter-700" href="#">2</a></li>
+            <li class="pagination__item flex-center"><a class="pagination__link inter-700" href="#">...</a></li>
+            <li class="pagination__item flex-center"><a class="pagination__link inter-700" href="#">9</a></li>
+            <li class="pagination__item flex-center"><a class="pagination__link inter-700" href="#">10</a></li>
+            <li class="pagination__item pagination__control-next">
+                <a class="pagination__link--control" href="#">
+                    <svg class="pagination__svg--next" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="pagination__svg-path" d="M0.608124 2.68875L6.90562 9L0.608124 15.3113L2.54687 17.25L10.7969 9L2.54687 0.75L0.608124 2.68875Z" fill="#C4CDD5"/>
+                    </svg>
+                </a>
+            </li>
         </ul>
     </main>
     <footer class="footer">

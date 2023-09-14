@@ -78,7 +78,6 @@ footer {
 /*-----------------------------*/
 
 .pagination {
-    background-color: darkgoldenrod;
     height: 44px;
     margin: 68px 413.67px 68px auto;
     position: relative;
@@ -86,8 +85,60 @@ footer {
 }
 
 .pagination__item {
-    background-color: cadetblue;
+    border: 1px solid rgba(223, 227, 232, 1);
+    border-radius: 4px;
+    box-sizing: border-box;
     height: 44px;
     list-style-type: none;
     width: 44px;
+}
+
+.pagination__control-prev {
+    background: rgba(145, 158, 171, 1);
+}
+
+.pagination__control--disabled {
+    border: none;
+    opacity: 0.5;
+}
+
+.pagination__link--control {
+    display: inline-block;
+    height: 33px;
+    margin: 5.5px;
+    width: 33px;
+}
+
+.pagination__svg--prev, .pagination__svg--next {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 16.5px;
+    width: 10.19px;
+}
+
+.pagination__svg--prev {
+    margin: 8.25px 10.78px 8.25px 12.03px;
+}
+
+.pagination__svg--next {
+    margin: 8.25px 12.03px 8.25px 10.78px;
+}
+
+.pagination__link {
+    color: rgba(33, 43, 54, 1);
+    display: inline-block;
+    font-size: 16px;
+    /* height: 34px; */
+    /* margin: 5px 4px; */
+    text-align: center;
+    vertical-align: bottom;
+    /* width: 36px; */
+}
+
+.pagination__item--selected {
+    border-color: rgba(255, 51, 51, 1);
+}
+
+.pagination__link--selected {
+    color: rgba(255, 51, 51, 1);
 }
